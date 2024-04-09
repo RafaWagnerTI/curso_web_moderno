@@ -1,0 +1,50 @@
+<h1>Projeto</h1>
+<ul class="tree" wm-visivel="visivel">
+  <li>backend
+    <ul wm-visivel="visivel">
+      <li>
+        app
+        <ul wm-visivel="visivel">
+          <li>produto.js</li>
+          <li>usuario.js</li>
+          <li>venda.js</li>
+        </ul>
+      </li>
+      <li>
+        config
+        <ul wm-visivel="visivel">
+          <li>banco.js</li>
+          <li>rotas.js</li>
+          <li>servidor.js</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    frontend
+    <ul wm-visivel="visivel">
+      <li>public
+        <ul wm-visivel="visivel">
+          <li>app.css</li>
+          <li>app.js</li>
+          <li>index.html</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+<script>
+  document.addEventListener('click', function(e) {
+    const elemento = e.target;
+    const filhos = elemento.childNodes;
+    const lista = filhos[1];
+
+    lista.style = lista.getAttribute("wm-visivel") ? "display:none" : "";
+
+    lista.setAttribute("wm-visivel", lista.getAttribute("wm-visivel") ? "" : "visivel" );
+    
+  }, false)
+</script>

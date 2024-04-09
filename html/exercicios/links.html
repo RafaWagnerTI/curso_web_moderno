@@ -1,0 +1,21 @@
+<h1>Links</h1>
+
+<!-- URL Absoluta -->
+<a id="inicio" href="https://www.google.com.br">Google 1</a><br>
+<a href="https://www.google.com.br" target="_blank">Google 2</a><br><br> <!-- Inicia o URL absoluta em uma nova aba em branco -->
+
+<!-- URL Relativa -->
+<a href="index.html">Voltar 1</a><br>    <!-- Só abre o arquivo se houver na pasta atual. -->
+<a href="/index.html">Voltar 2</a><br>   <!-- Acessa arquivo na raiz do projeto. -->
+<a href="../index.html">Voltar 3</a><br><br> <!-- Move para a pasta anterior e acessa o arquivo se estiver lá. -->
+
+<a href="mailto:rafael_trindade@acaciaconsultoria.com.br">Entre em contato</a><br><br> <!-- abre aplicativo de email definido como padrão pelo usuário -->
+
+<div id="noticia" style="position:absolute;top:2000px;">
+	<h1>Grande notícia!</h1>
+	<p>Não era nada... :)</p>
+	<a href="#inicio">Voltar Início</a>
+</div>
+
+<a href="#noticia">Ir para Notícia</a> <!-- Dentro de uma mesma página, navega até a div que tem esse id, é conhecido como navegação por ancora -->
+<!-- a âncora não é enviada para o backend quando o link é requisitado -->
